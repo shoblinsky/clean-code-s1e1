@@ -14,7 +14,7 @@
   </header>
   <main class="main">
     <div class="main__div">
-      <label for="new-task">Add Item</label>
+      <label for="new-task" class="main__div-name">Add Item</label>
       <div class="main__wrapper">
         <input id="new-task" class="main__wrapper-task" type="text">
         <button class="main__wrapper-btn">Add</button>
@@ -22,18 +22,18 @@
   </div>
   <section class="section todo">
     <h2 class="section__header">Todo</h2>
-    <ul class="section__ul" id="incompleteTasks">
+    <ul class="section__ul" id="incompleted-tasks">
       <li class="section__ul-li">
         <input type="checkbox" class="li-checkbox">
-        <label class="li-task">Pay Bills</label>
-        <input type="text" class="li-task">
+        <label class="li-task li-label">Pay Bills</label>
+        <input type="text" class="li-task li-input li__task-input">
         <button class="li-edit">Edit</button>
         <button class="li-delete"><img src="./remove.svg" alt="delete task button" class="li-delete-img"></button>
       </li>
       <li class="section__ul-li editMode">
         <input type="checkbox" class="li-checkbox">
-        <label class="li-task">Go Shopping</label>
-        <input type="text" value="Go Shopping" class="li-task">
+        <label class="li-task li-label li-edit-mode__task-label">Go Shopping</label>
+        <input type="text" value="Go Shopping" class="li-task li-input li-edit-mode__task-input">
         <button class="li-edit">Save</button>
         <button class="li-delete"><img src="./remove.svg" alt="delete task button" class="li-delete-img"></button>
       </li>
@@ -44,8 +44,8 @@
     <ul class="section__ul" id="completed-tasks">
       <li class="section__ul-li">
         <input type="checkbox" class="li-checkbox" checked>
-        <label class="li-task">See the Doctor</label>
-        <input type="text" class="li-task">
+        <label class="li-task li-label li-completed__task-label">See the Doctor</label>
+        <input type="text" class="li-task li-input li__task-input li-completed__task-input">
         <button class="li-edit">Edit</button>
         <button class="li-delete"><img src="./remove.svg" alt="remove button" class="li-delete-img"></button>
       </li>
